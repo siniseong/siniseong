@@ -54,7 +54,7 @@ export default class Experience extends Component {
         ],
       },
       {
-        name: 'oftware FUTURE&DREAM Challenge 2023 본선 진출',
+        name: 'Software FUTURE&DREAM Challenge 2023 본선 진출',
         term: '2023.07. ~ 2023.12.',
         descriptions: [
           '선린인터넷고, 대덕소프트웨어마이스터고 학생과 환경을 위한 앱 에코마인드 개발을 진행하였습니다. 에코마인드에서는 환경을 위해서는 무단 투기보다 모든 쓰레기를 일반 쓰레기에 넣는 경우가 많다라는 생각을 했고, 카메라로 쓰레기를 촬영하면 어디에 버려야하는지를 알려주는 앱을 개발했습니다.',
