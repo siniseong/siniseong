@@ -81,7 +81,7 @@ export default class Techstack extends Component {
       },
       {
         name: 'C#',
-        star: '',
+        star: '스터디 중...',
         desc: 'C#을 로보티스, 시뮬레이션 분야에 사용하기 위해 공부하고 있습니다.',
         icon: CshapLogo,
       },
