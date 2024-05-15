@@ -1,0 +1,77 @@
+.profile-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  aspect-ratio: 95 / 7;
+}
+
+.profile-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.profile-position {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.profile-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 15px; 
+}
+
+.profile-wrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0; /* 줄인 간격 */
+}
+
+.profile-icon {
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  filter: var(--filter-icon);
+}
+
+.profile-icon-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  font-size: 0.85rem;
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.profile-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.profile-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.profile-iam-title {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  font-size: 1.3rem;
+  > div {
+    border-bottom: 2px solid var(--color-font);
+    width: 50%;
+  }
+}
+
+.profile-iam-content {
+  font-size: 1.1rem;
+  line-height: 2;
+}

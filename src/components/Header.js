@@ -1,0 +1,46 @@
+import Component from '../core/Component.js';
+import MoonIcon from '../assets/images/moon-icon.svg';
+import SunIcon from '../assets/images/sun-icon.svg';
+import Style from '../style/header.css';
+
+export default class Header extends Component {
+  template() {
+    return `
+        <div class="header-wrapper">
+            <div class="header-theme-button">${
+              this.state.isDarkMode
+                ? `<img src=${SunIcon} alt='sun-icon'/>`
+                : `<img src=${MoonIcon} alt='moon-icon'/>`
+            }</div>
+            <div class="header-menu">프로젝트</div>
+            <div class="header-menu">기술</div>
+            <div class="header-menu">소개</div>
+        </div>
+    `;
+  }
+  setup() {
+    this.state = { isDarkMode: window.__theme === window.__DARK };
+  }
+  setEvent() {
+    this.addEvent('click', '.header-theme-button', () => {
+      const newTheme = this.state.isDarkMode ? window.__LIGHT : window.__DARK;
+      window.__setTheme(newTheme);
+      this.setState({ isDarkMode: newTheme === window.__DARK });
+    });
+
+    this.addEvent('click', '.header-wrapper', (event) => {
+      const idx = Array.from(event.target.parentElement.children).indexOf(
+        event.target
+      );
+      if (idx === 0) return;
+      const menus = ['', 'projects', 'skills', 'about'];
+      const sectionElement = document.getElementById(menus[idx]);
+      const sectionTop = sectionElement?.getBoundingClientRect().top;
+
+      window.scrollTo({
+        top: window.scrollY + sectionTop - 80,
+        behavior: 'smooth',
+      });
+    });
+  }
+}
