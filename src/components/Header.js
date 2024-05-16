@@ -22,7 +22,7 @@ export default class Header extends Component {
             <div class="header-menu">프로젝트</div>
             <div class="header-menu">기술</div>
             <div class="header-menu">소개</div>
-            <div class="header-confetti-button">💙</div> 
+            <div class="header-confetti-button">❤</div> 
         </div>
     `;
   }
@@ -38,7 +38,7 @@ export default class Header extends Component {
       const idx = Array.from(event.target.parentElement.children).indexOf(
         event.target
       );
-      if (idx === 0 || idx === 4) return;  // 컨페티 버튼은 제외
+      if (idx === 0 || idx === 4) return;  
       const menus = ['', 'projects', 'skills', 'about'];
       const sectionElement = document.getElementById(menus[idx]);
       const sectionTop = sectionElement?.getBoundingClientRect().top;
