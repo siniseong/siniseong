@@ -25,3 +25,17 @@
     cursor: pointer;
   }
 }
+
+.header-confetti-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+  font-size: 22px; 
+}

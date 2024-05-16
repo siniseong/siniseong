@@ -1,9 +1,16 @@
 import Component from '../core/Component.js';
 import MoonIcon from '../assets/images/moon-icon.svg';
 import SunIcon from '../assets/images/sun-icon.svg';
+import confetti from 'canvas-confetti';  
 import Style from '../style/header.css';
 
 export default class Header extends Component {
+  setup() {
+    this.state = { 
+      isDarkMode: window.__theme === window.__DARK
+    };
+  }
+
   template() {
     return `
         <div class="header-wrapper">
@@ -15,12 +22,11 @@ export default class Header extends Component {
             <div class="header-menu">프로젝트</div>
             <div class="header-menu">기술</div>
             <div class="header-menu">소개</div>
+            <div class="header-confetti-button">💙</div> 
         </div>
     `;
   }
-  setup() {
-    this.state = { isDarkMode: window.__theme === window.__DARK };
-  }
+
   setEvent() {
     this.addEvent('click', '.header-theme-button', () => {
       const newTheme = this.state.isDarkMode ? window.__LIGHT : window.__DARK;
@@ -32,7 +38,7 @@ export default class Header extends Component {
       const idx = Array.from(event.target.parentElement.children).indexOf(
         event.target
       );
-      if (idx === 0) return;
+      if (idx === 0 || idx === 4) return;  // 컨페티 버튼은 제외
       const menus = ['', 'projects', 'skills', 'about'];
       const sectionElement = document.getElementById(menus[idx]);
       const sectionTop = sectionElement?.getBoundingClientRect().top;
@@ -40,6 +46,17 @@ export default class Header extends Component {
       window.scrollTo({
         top: window.scrollY + sectionTop - 80,
         behavior: 'smooth',
+      });
+    });
+
+    this.addEvent('click', '.header-confetti-button', () => {
+      const shapes = ['circle', 'square', 'triangle', 'line'];
+      const randomShape = shapes[Math.floor(Math.random() * shapes.length)];
+      confetti({
+        particleCount: 200,
+        spread: 160,
+        origin: { y: 0.6 },
+        shapes: [randomShape],
       });
     });
   }
