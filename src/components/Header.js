@@ -23,9 +23,9 @@ export default class Header extends Component {
             <div class="header-menu">프로젝트</div>
             <div class="header-menu">기술</div>
             <div class="header-menu">소개</div>
-            <div class="header-confetti-button">❤</div> 
+            <div class="header-confetti-button">💚</div> 
         </div>
-        <div class="progress-bar"></div>  <!-- 스크롤 진행바 요소 추가 -->
+        <div class="progress-bar"></div>  
     `;
   }
 
