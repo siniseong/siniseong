@@ -9,6 +9,7 @@ export default class Header extends Component {
     this.state = { 
       isDarkMode: window.__theme === window.__DARK
     };
+    this.updateProgressBar = this.updateProgressBar.bind(this);
   }
 
   template() {
@@ -24,6 +25,7 @@ export default class Header extends Component {
             <div class="header-menu">소개</div>
             <div class="header-confetti-button">❤</div> 
         </div>
+        <div class="progress-bar"></div>  <!-- 스크롤 진행바 요소 추가 -->
     `;
   }
 
@@ -59,5 +61,17 @@ export default class Header extends Component {
         shapes: [randomShape],
       });
     });
+
+    window.addEventListener('scroll', this.updateProgressBar);
+  }
+
+  updateProgressBar() {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
+    document.querySelector('.progress-bar').style.width = `${scrollPercent}%`;
+  }
+
+  cleanup() {
+    window.removeEventListener('scroll', this.updateProgressBar);
   }
 }
