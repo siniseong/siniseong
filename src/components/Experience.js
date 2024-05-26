@@ -12,6 +12,13 @@ export default class Experience extends Component {
         ],
       },
       {
+        name: 'SmrtTeen App Challenge 2024 생활정보분야 개발부문 본선 진출',
+        term: '2024.04. ~ ',
+        descriptions: [
+          '생활정보분야에서 경계선 지능 장애 아이의 학습을 위한 웹이라는 아이디어로 본선에 진출했고, 현재는 프로토타입 개발 중에 있습니다.',
+        ],
+      },
+      {
         name: '교내 컨퍼런스 INSCON 발표',
         term: '2024.01.04',
         descriptions: [
