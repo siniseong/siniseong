@@ -5,6 +5,13 @@ export default class Experience extends Component {
   template() {
     const experienceList = [
       {
+        name: 'STEM Leader CAMP',
+        term: '2024.05.20 ~ 2024.05.24',
+        descriptions: [
+          'NUS (싱가포르 국립대학교)에서 진행한 UI/UX 디자인 수업을 들었고, AI Chatbot 앱/웹에서 UI/UX를 개선 + NUS 학생들이 사용할 수 있도록 이라는 주제를 추가해 영어로 발표를 하였습니다. 저희 팀이 선택한 웹은 가가라이브라는 랜덤 채팅 웹 이였습니다.',
+        ],
+      },
+      {
         name: '교내 컨퍼런스 INSCON 발표',
         term: '2024.01.04',
         descriptions: [
