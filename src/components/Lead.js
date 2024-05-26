@@ -2,6 +2,16 @@ import Component from '../core/Component.js';
 import Style from '../style/experience.css';
 
 export default class Experience extends Component {
+  setEvent() {
+    this.addEvent('click', '.experience-item-title', (event) => {
+      const item = event.target.closest('.experience-item');
+      const desc = item.querySelector('.experience-item-desc');
+      if (desc) {
+        desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+      }
+    });
+  }
+
   template() {
     const experienceList = [
       {
@@ -30,7 +40,7 @@ export default class Experience extends Component {
 
     return `
       <div>
-        <div class="experience-title">🧑‍🤝‍🧑리드</div>
+        <div class="experience-title">🧑‍🤝‍🧑리드 <span class="experience-instruction">(각 세션을 눌리면 자세한 내용을 볼 수 있어요))</span></div>
         <div class="experience-content">
           ${experienceList
             .map(
@@ -42,7 +52,7 @@ export default class Experience extends Component {
                   <div>${experience.name}</div> 
                 </div>
                 <div class="experience-item-term">${experience.term}</div> 
-                <div class="experience-item-desc">
+                <div class="experience-item-desc" style="display: none;">
                 ${experience.descriptions
                   .map((desc) => `• ${desc}<br/>`)
                   .join('')}

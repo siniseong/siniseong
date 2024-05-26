@@ -2,6 +2,16 @@ import Component from '../core/Component.js';
 import Style from '../style/experience.css';
 
 export default class Experience extends Component {
+  setEvent() {
+    this.addEvent('click', '.experience-item-title', (event) => {
+      const item = event.target.closest('.experience-item');
+      const desc = item.querySelector('.experience-item-desc');
+      if (desc) {
+        desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+      }
+    });
+  }
+
   template() {
     const experienceList = [
       {
@@ -81,7 +91,6 @@ export default class Experience extends Component {
           '알츠하이머 환자를 위한 자동 약 배급기를 개발하였습니다. 알츠하이머 환자는 잠시전에 있었던 일도 잊는 일이 많습니다. 알츠하이머 환자는 약을 복용할 때 과다 복용으로 환자의 생명에 문제가 생기는 경우를 봤습니다. 최소한 약 과다 복용으로 생명을 잃는 일은 없으면 좋겠다는 생각을 하였고, 약을 복용해야하는 시간에 자동으로 약을 배급하고, AI로 환자와 대화를 할 수 있도록 개발을 진행하였습니다. ',
         ],
       },
-      
       {
         name: '2023 네트워크 경진대회 작품 전시',
         term: '2023.10. ~ 2023.12',
@@ -104,24 +113,21 @@ export default class Experience extends Component {
         ],
       },
       
-      
     ];
 
     return `
       <div>
-        <div class="experience-title">💟 소중한 경험</div>
+        <div class="experience-title">💟 소중한 경험 <span class="experience-instruction">(각 세션을 눌리면 자세한 내용을 볼 수 있어요)</span></div>
         <div class="experience-content">
           ${experienceList
             .map(
               (experience, i) => `
-              <div class="${
-                i < experienceList.length - 1 ? 'experience-item' : ''
-              }">
+              <div class="${i < experienceList.length - 1 ? 'experience-item' : ''}">
                 <div class="experience-item-title">
                   <div>${experience.name}</div> 
                 </div>
                 <div class="experience-item-term">${experience.term}</div> 
-                <div class="experience-item-desc">
+                <div class="experience-item-desc" style="display: none;">
                 ${experience.descriptions
                   .map((desc) => `• ${desc}<br/>`)
                   .join('')}
