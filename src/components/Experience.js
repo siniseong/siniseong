@@ -18,7 +18,7 @@ export default class Experience extends Component {
         name: 'STEM Leader CAMP',
         term: '2024.05.20 ~ 2024.05.24',
         descriptions: [
-          'NUS (싱가포르 국립대학교)에서 진행한 UI/UX 디자인 수업을 들었고, AI Chatbot 앱/웹에서 UI/UX를 개선 + NUS 학생들이 사용할 수 있도록 이라는 주제를 추가해 영어로 발표를 하였습니다. 저희 팀이 선택한 웹은 가가라이브라는 랜덤 채팅 웹 이였습니다.',
+          'NUS (싱가포르 국립대학교)에서 진행한 UI/UX 디자인 수업을 들었고, AI Chatbot 앱/웹에서 UI/UX를 개선 + NUS 학생들이 사용할 수 있도록 이라는 주제를 추가해 영어로 발표를 하였습니다. 저희 팀이 선택한 웹은 가가라이브라는 랜덤 채팅 웹 이였습니다. <a href="https://velog.io/@huise0ng/1%EC%A3%BC%EC%9D%BC%EA%B0%84-NUS-%EB%8C%80%ED%95%99%EC%83%9D%EC%9D%84-%EA%B2%BD%ED%97%98%ED%95%98%EB%A9%B0" target="_blank">Velog 글 확인하기</a>',
         ],
       },
       {
