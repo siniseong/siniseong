@@ -40,14 +40,12 @@ export default class Experience extends Component {
 
     return `
       <div>
-        <div class="experience-title">🧑‍🤝‍🧑리드 <span class="experience-instruction">(각 세션을 눌리면 자세한 내용을 볼 수 있어요))</span></div>
+        <div class="experience-title">🧑‍🤝‍🧑리드 <span class="experience-instruction">(각 세션을 눌리면 자세한 내용을 볼 수 있어요)</span></div>
         <div class="experience-content">
           ${experienceList
             .map(
-              (experience, i) => `
-              <div class="${
-                i < experienceList.length - 1 ? 'experience-item' : ''
-              }">
+              (experience) => `
+              <div class="experience-item">
                 <div class="experience-item-title">
                   <div>${experience.name}</div> 
                 </div>
