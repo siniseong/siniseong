@@ -15,6 +15,13 @@ export default class Experience extends Component {
   template() {
     const experienceList = [
       {
+        name: 'Gemini API Developer Contest',
+        term: '2024.05. ~ ',
+        descriptions: [
+          'Gemini Api 외 구글에서 내놓은 기술을 활용해 개발하는 Gemini Api Developer Contest에 참가하였습니다.',
+        ],
+      },
+      {
         name: 'STEM Leader CAMP',
         term: '2024.05.20 ~ 2024.05.24',
         descriptions: [

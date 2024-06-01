@@ -206,7 +206,7 @@ export default class Projects extends Component {
         videoLink: 'https://www.youtube.com/watch?v=_dvMidtkXms', 
         troubleShooting: {
           role:
-            "Html, CSS, JS를 이용해 2030 엑스포를 유치할 수 있는 나라들과 부산을 비교해 부산의 장점을 토대로 부산을 소개하는 웹페이지를 개발하였습니다.<br>OpenCV, Yolo V5를 사용해 AI를 개발에 참여했습니다. <br>Node.js를 사용해 웹에 AI 기술을 연동시켰습니다.",
+            "Html, CSS, JS를 이용해 2030 엑스포를 유치할 수 있는 나라들과 부산을 비교해 부산의 장점을 토대로 부산을 소개하는 웹페이지를 개발하였습니다.<br>OpenCV, Yolo V5를 사용해 AI 개발에 참여했습니다. <br>Node.js를 사용해 웹에 AI 기술을 연동시켰습니다.",
           trouble:
             '이 프로젝트를 진행하게 된 계기는 부산에서 진행한 대회였습니다. 아이디어를 1차적으로 통과하면개발에 진행했었고, 저희팀은 아이디어를 제출하고, 갑작스럽게 붙은 상황에서 AI에 대한 지식을 가지고 있지 않았습니다. 저희팀은 따로 <u>공부하는 시간을 같기보다 이론 위주의 강의를 듣고, 개발을 하며 막히는 부분을 구글링</u> 하는 방식으로 개발을 진행하였습니다.  ' ,
           okay:
