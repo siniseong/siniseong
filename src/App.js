@@ -7,6 +7,7 @@ import Header from './components/Header.js';
 import Experience from './components/Experience.js';
 import Lead from './components/Lead.js';
 
+
 export default class App extends Component {
   template() {
     return `
@@ -22,6 +23,7 @@ export default class App extends Component {
           <div data-component="lead-appender" id="lead"></div> 
           <div class="global-line"></div>
           <div data-component="experience-appender" id="experience"></div>
+         
           
         </div>
       </div>

@@ -1,38 +1,45 @@
 .experience-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  
-  .experience-content {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .experience-item {
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--color-border);
-  }
-  
-  .experience-item-title {
-    font-size: 1.15rem;
-    font-weight: 600;
-    display: flex;
-    gap: 0.5rem;
-    align-items: end;
-  }
-  
-  .experience-item-term {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--color-textlight);
-    padding: 0.5rem 0;
-  }
-  
-  .experience-item-desc {
-    font-weight: 400;
-    font-size: 0.95rem;
-    color: var(--color-textgrey);
-  }
-  
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.experience-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-item {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.experience-item-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: flex;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.experience-item-title div {
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+}
+
+.experience-item-title div:hover {
+  color: orange; /* 마우스 오버 시 글자 색상을 주황색으로 변경 */
+}
+
+.experience-item-term {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-textlight);
+  padding: 0.5rem 0;
+}
+
+.experience-item-desc {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--color-textgrey);
+}

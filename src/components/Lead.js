@@ -1,9 +1,10 @@
+
 import Component from '../core/Component.js';
 import Style from '../style/experience.css';
 
 export default class Experience extends Component {
   setEvent() {
-    this.addEvent('click', '.experience-item-title', (event) => {
+    this.addEvent('click', '.experience-item-title div', (event) => {
       const item = event.target.closest('.experience-item');
       const desc = item.querySelector('.experience-item-desc');
       if (desc) {
