@@ -11,6 +11,9 @@ import jj from '../assets/images/jj1.png';
 import eco1 from '../assets/images/eco1.png';
 import eco2 from '../assets/images/eco2.png';
 import bit from '../assets/images/bit.png'
+import boundary1 from '../assets/images/boundary1.png';
+import boundary2 from '../assets/images/boundary2.png';
+
 
 export default class Projects extends Component {
   template() {
@@ -31,9 +34,9 @@ export default class Projects extends Component {
         features: [
           '케이크를 자르지 못하는 아이들" 책을 통해 <u>경계선 지능 장애의 현실</u>을 알게 되었습니다. 한국에는 약 700만 명이 이 장애를 겪고있지만 지원 시설은 부족합니다. 조기 진단과 교육이 중요하지만 많은 제약이 있습니다. 이를 해결하기 위해 저희는 "바운더리" 서비스를 고안했습니다. 이 서비스는 경계선 지능 장애 학생들이 시간과 공간의 제약 없이 인지력을 향상시킬 수 있도록 도와줍니다.',
         ],
-        github: '',
-        image1: '',
-        image2: '',
+        github: 'https://github.com/orgs/STAC-Boundary/repositories',
+        image1: boundary1,
+        image2: boundary2,
         troubleShooting: {
           role:
             "대회 서류 합격 이 후 피그마를 통해 프로토타입을 구성했어요. 최대한 경계선 지능 장애 아이의 편의성을 위해서 복잡한 디자인을 사용하지 않았고, 기능도 학습에 필요한 기능만 넣었어요.",
