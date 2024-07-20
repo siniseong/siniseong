@@ -6,6 +6,7 @@ import Footer from './components/Footer.js';
 import Header from './components/Header.js';
 import Experience from './components/Experience.js';
 import Lead from './components/Lead.js';
+import Prize from './components/prize.js';
 
 
 export default class App extends Component {
@@ -23,6 +24,8 @@ export default class App extends Component {
           <div data-component="lead-appender" id="lead"></div> 
           <div class="global-line"></div>
           <div data-component="experience-appender" id="experience"></div>
+          <div class="global-line"></div>
+          <div data-component="prize-appender" id="experience"></div>
          
           
         </div>
@@ -50,7 +53,11 @@ export default class App extends Component {
     const $experienceAppender = this.target.querySelector('[data-component="experience-appender"]');
     new Experience($experienceAppender);
 
+    const $prizeAppender = this.target.querySelector('[data-component="prize-appender"]');
+    new Prize($prizeAppender);
+
     const $footerAppender = this.target.querySelector('[data-component="footer-appender"]');
     new Footer($footerAppender);
+    
   }
 }

@@ -1,0 +1,44 @@
+.experience-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .experience-content {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .experience-instruction {
+    font-size: 0.8em;
+    color: gray;
+    margin-left: 10px;
+  }
+  
+  .experience-item {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .experience-item-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: flex;
+    gap: 0.5rem;
+    align-items: end;
+  }
+  
+  .experience-item-term {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-textlight);
+    padding: 0.5rem 0;
+  }
+  
+  .experience-item-desc {
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: var(--color-textgrey);
+  }
+  
