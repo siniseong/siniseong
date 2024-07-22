@@ -22,7 +22,7 @@ export default class Profile extends Component {
       {
         name: 'Mail',
         iconSrc: Mail,
-        href: 'mailto:huiseong2785@naver.com', // mailto: 링크로 수정
+        href: 'mailto:huiseong2785@naver.com',
       },
     ];
     return `
@@ -52,6 +52,24 @@ export default class Profile extends Component {
           팀원과 원활한 협업을 할 수 있는 개발자가 되는 것이 저의 큰 목표 입니다. <br>
           원활한 협업이라는 것은 기술 스택을 습득하는 것 보다 어려운 과정이라는 것을 알고 있고, 모든 프로젝트를 진행할 때 원활한 협업을 하기 위해 깊게 고민하고, 먼저 양보합니다.
         </div>
+      </div>
     `;
+  }
+
+  mounted() {
+    console.log(`
+                                             
+                            ##               
+                      ##                     
+##  ##   ####   ### #####  ##    ###   ## ## 
+##  ##  ## ##  ##    ##    ##   ## ##  ##### 
+## ##  ##  ## ##     ##    ##  ##  ##  ## ## 
+## #   ## ##  ##    ##    ##   ##  ## ##  #  
+###    #####  ##    ##    ##   ## ##  ## ##  
+##     ## ##   ###  ###   ##    ###   ## ##  
+                                             
+                                             
+https://wandering-confidence-5d5.notion.site/640335f2db3b4360b1f142116b5dcb1f?pvs=4
+    `);
   }
 }
