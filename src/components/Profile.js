@@ -68,7 +68,7 @@ export default class Profile extends Component {
 ###    #####  ##    ##    ##   ## ##  ## ##  
 ##     ## ##   ###  ###   ##    ###   ## ##  
                                              
-                                             
+여름방학 알알알찬 일지                                      
 https://wandering-confidence-5d5.notion.site/640335f2db3b4360b1f142116b5dcb1f?pvs=4
     `);
   }
