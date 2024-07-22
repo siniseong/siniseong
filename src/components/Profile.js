@@ -32,7 +32,7 @@ export default class Profile extends Component {
           <div class="profile-name">
             신희성
             <div class="profile-position">
-              프론트엔드, 관제
+              프론트엔드, 시뮬레이션 엔지니어
             </div>
             <div class="profile-icon-wrapper">
               ${linkList.map(link => `
